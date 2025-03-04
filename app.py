@@ -753,7 +753,7 @@ def update_graph0(r,r1):
     return fig_0, fig_1, fig_2
 
 if __name__ == '__main__':
-    sys.argv = ["streamlit", "run", "APP_NAME.py"]
+    sys.argv = ["streamlit", "run", "app.py"]
     sys.exit(stcli.main())
 
 '''・これは軌道計算機です。加速度を一定としているため、簡易的なものでありますが、お役に立てば幸いです。（データが少ない上、実際は海抜や湿度、風、空気抵抗による加速度の変化なども考慮しなければならないところ、等加速度運動とみなしているため、誤差があります。）

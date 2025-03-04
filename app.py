@@ -11,9 +11,8 @@ from pybaseball import pitching_stats
 import pandas as pd
 import math
 from datetime import datetime
-from streamlit.web import cli as stcli
-from streamlit import runtime
 import sys
+from streamlit.web import cli as stcli
 
 Game_Type = 'R'
 Per=0.001
@@ -754,11 +753,8 @@ def update_graph0(r,r1):
     return fig_0, fig_1, fig_2
 
 if __name__ == '__main__':
-    if runtime.exists():
-        main()
-    else:
-        sys.argv = ["streamlit", "run", sys.argv[0]]
-        sys.exit(stcli.main())
+    sys.argv = ["streamlit", "run", "APP_NAME.py"]
+    sys.exit(stcli.main())
 
 '''・これは軌道計算機です。加速度を一定としているため、簡易的なものでありますが、お役に立てば幸いです。（データが少ない上、実際は海抜や湿度、風、空気抵抗による加速度の変化なども考慮しなければならないところ、等加速度運動とみなしているため、誤差があります。）
 ・Perは時間間隔(s)です。任意で変えられます。

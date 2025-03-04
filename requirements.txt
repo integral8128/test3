@@ -6,3 +6,5 @@ pandas
 plotly
 gunicorn
 datetime
+streamlit
+sys

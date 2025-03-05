@@ -11,7 +11,6 @@ from pybaseball import pitching_stats
 import pandas as pd
 import math
 from datetime import datetime
-import sys
 from streamlit.web import cli as stcli
 
 Game_Type = 'R'
